@@ -41,4 +41,6 @@ Review Module 19 Lesson 5 as refresher.
     * start_url
     * display
 
-Deploy to Heroku using MongoDB Atlas
+Deploy to Heroku using MongoDB Atlas as its database.
+Review Module 18: NoSQL Lesson 5 as a refresher. (specifically 18.5.5)
+
