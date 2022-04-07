@@ -44,4 +44,19 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="js/index.js"></script>
 </body>
+<!--- script registering service worker-->
+<script>
+  // anon function with if statement; navigator = browser; if the serviceWorker is seen in the browser, that service worker will be registered.
+  (function () {
+    if ("serviceWorker" in navigator) {
+      // registration of service of serviceWoker passes in the location of the service-worker file
+      navigator.serviceWorker.register("./service-worker.js")
+      //if found; success message
+      .then(() => console.log("Service Worker registered successfully."))
+      //if error; error message
+      .catch(error => console.log("Service Worker registration error!", error));
+    }
+    //immediately invoke function expression (IIFE); note the empty (); AFTER the function as well as at the START; this function will not be part of global functions
+  })();
+</script>
 </html>
