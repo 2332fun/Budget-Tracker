@@ -1,18 +1,21 @@
-const APP_PREFIX = 'FoodEvent-';     
+const APP_PREFIX = 'BudgetTracker-';     
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
+  "./",
   "./index.html",
-  "./events.html",
-  "./tickets.html",
-  "./schedule.html",
-  "./assets/css/style.css",
-  "./assets/css/bootstrap.css",
-  "./assets/css/tickets.css",
-  "./dist/app.bundle.js",
-  "./dist/events.bundle.js",
-  "./dist/tickets.bundle.js",
-  "./dist/schedule.bundle.js"
+  "./css/style.js",
+  "./manifest.json",
+  "./js/index.js",
+  "./service-worker.js",
+  "./icons/icon_512x512.png",
+  "./icons/icon_384x384.png",
+  "./icons/icon_192x192.png",
+  "./icons/icon_152x152.png",
+  "./icons/icon_144x144.png",
+  "./icons/icon_128x128.png",
+  "./icons/icon_96x96.png",
+  "./icons/icon_72x72.png",
 ];
 
 // Respond with cached resources
